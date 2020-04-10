@@ -13,6 +13,7 @@ module.exports = {
       title: 'Game Demo',
       template: './templates/index.html',
       production: isProduction,
+      inject: false,
     }),
     new CopyPlugin([
       { from: 'public', to: 'dest' },

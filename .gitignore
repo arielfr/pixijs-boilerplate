@@ -1,7 +1,7 @@
 # Dependency directory
 node_modules
 
-# gh pages temporary folder
+# Webpack
 dist
 
 # Trash

@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack-dev-server --open --config webpack.dev.js",
-    "build": "webpack --config webpack.prod.js",
+    "build": "NODE_ENV=production webpack --config webpack.prod.js",
     "watch": "webpack --watch --config webpack.dev.js",
     "publish": "npm run build && node publish.js"
   },
@@ -22,6 +22,7 @@
   "homepage": "https://github.com/arielfr/tetriscript#readme",
   "devDependencies": {
     "clean-webpack-plugin": "^3.0.0",
+    "copy-webpack-plugin": "^5.1.1",
     "gh-pages": "^2.2.0",
     "html-webpack-plugin": "^4.2.0",
     "terser-webpack-plugin": "^2.3.5",

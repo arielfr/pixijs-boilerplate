@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<%= htmlWebpackPlugin.tags.headTags %>
+		<% if (htmlWebpackPlugin.options.production) { %>
+			<script src="scripts/pixi.min.js"></script>
+		<% } %>
+		<% if (!htmlWebpackPlugin.options.production) { %>
+			<script src="scripts/pixi.js"></script>
+		<% } %>
+	</head>
+	<body>
+		<%= htmlWebpackPlugin.tags.bodyTags %>
+	</body>
+</html>

@@ -1,6 +1,9 @@
-const HtmlWebpackPlugin = require('html-webpack-plugin');
 const path = require('path');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const CopyPlugin = require('copy-webpack-plugin');
+
+const isProduction = (process.env.NODE_ENV === 'production');
 
 module.exports = {
   entry: './game/index.js',
@@ -8,7 +11,12 @@ module.exports = {
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
       title: 'Game Demo',
+      template: './templates/index.html',
+      production: isProduction,
     }),
+    new CopyPlugin([
+      { from: 'public', to: 'dest' },
+    ]),
   ],
   output: {
     path: path.resolve(__dirname, 'dist'),

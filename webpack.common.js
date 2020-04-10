@@ -6,7 +6,7 @@ const isProduction = (process.env.NODE_ENV === 'production');
 
 module.exports = {
   entry: {
-    'game': './game/index.js',
+    'game': './src/index.js',
     'pixi': './resources/pixi.js'
   },
   plugins: [
@@ -18,6 +18,21 @@ module.exports = {
       inject: false,
     }),
   ],
+  module: {
+    rules: [
+      {
+        test: /\.s[ac]ss$/i,
+        use: [
+          // Creates `style` nodes from JS strings
+          'style-loader',
+          // Translates CSS into CommonJS
+          'css-loader',
+          // Compiles Sass to CSS
+          'sass-loader',
+        ],
+      },
+    ],
+  },
   output: {
     path: path.resolve(__dirname, 'dist'),
   },

@@ -1,7 +1,7 @@
 {
-  "name": "tetriscript",
+  "name": "pixijs-boilerplate",
   "version": "1.0.0",
-  "description": "Classic Tetris",
+  "description": "PixiJS Boilerplate",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -12,14 +12,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/arielfr/tetriscript.git"
+    "url": "git+https://github.com/arielfr/pixijs-boilerplate.git"
   },
   "author": "Ariel Rey",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/arielfr/tetriscript/issues"
+    "url": "https://github.com/arielfr/pixijs-boilerplate/issues"
   },
-  "homepage": "https://github.com/arielfr/tetriscript#readme",
+  "homepage": "https://github.com/arielfr/pixijs-boilerplate#readme",
   "devDependencies": {
     "clean-webpack-plugin": "^3.0.0",
     "copy-webpack-plugin": "^5.1.1",

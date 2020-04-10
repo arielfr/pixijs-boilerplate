@@ -1,13 +1,13 @@
 # PixiJS Boilerplate
 
-A [PixiJS](https://pixijs.io/) boilerplate (Github Template) for easy game development.
+A [PixiJS](https://pixijs.io/) development environment boilerplate (Github Template). With this boilerplate you're going to have an easy to develop environment with feature as hot reloading, minify, etc...
 
 ## What's Inside?
 
 This application counts with all you need to start developing your game as fast as an `npm install`. It contains:
 
 * PixiJS (5.1.6)
-* Webpack with Dev Server and Hot Realoading
+* Webpack with Dev Server and Hot Reloading
 * **Auto Publish** to Github Page (gh-pages) to play your game
 * Automatic Minify & Uglify of your code depending on your build type
 * Public folder to put all your assets

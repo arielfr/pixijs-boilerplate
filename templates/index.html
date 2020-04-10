@@ -5,12 +5,6 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title><%= htmlWebpackPlugin.options.title %></title>
 		<%= htmlWebpackPlugin.tags.headTags %>
-		<% if (htmlWebpackPlugin.options.production) { %>
-			<script src="scripts/pixi.min.js"></script>
-		<% } %>
-		<% if (!htmlWebpackPlugin.options.production) { %>
-			<script src="scripts/pixi.js"></script>
-		<% } %>
 	</head>
 	<body>
 		<%= htmlWebpackPlugin.tags.bodyTags %>

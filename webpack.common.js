@@ -8,7 +8,6 @@ const isProduction = (process.env.NODE_ENV === 'production');
 module.exports = {
   entry: {
     'game': './src/index.js',
-    'pixi': './resources/pixi.js'
   },
   plugins: [
     new CleanWebpackPlugin(),

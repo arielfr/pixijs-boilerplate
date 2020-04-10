@@ -1,0 +1,13 @@
+# Dependency directory
+node_modules
+
+# gh pages temporary folder
+dist
+
+# Trash
+.DS_Store
+.idea
+*.iml
+
+.vs/*
+.vscode/*

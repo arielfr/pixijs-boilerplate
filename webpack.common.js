@@ -8,6 +8,6 @@ module.exports = {
   ],
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: 'tetriscript.js'
+    filename: 'game.js'
   },
 };
